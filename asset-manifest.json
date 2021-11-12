@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/haptik-assignment/static/css/main.bbc5f618.chunk.css",
-    "main.js": "/haptik-assignment/static/js/main.1d334f19.chunk.js",
-    "main.js.map": "/haptik-assignment/static/js/main.1d334f19.chunk.js.map",
-    "runtime-main.js": "/haptik-assignment/static/js/runtime-main.8ccaff64.js",
-    "runtime-main.js.map": "/haptik-assignment/static/js/runtime-main.8ccaff64.js.map",
-    "static/js/2.da329d06.chunk.js": "/haptik-assignment/static/js/2.da329d06.chunk.js",
-    "static/js/2.da329d06.chunk.js.map": "/haptik-assignment/static/js/2.da329d06.chunk.js.map",
-    "static/js/3.845bad76.chunk.js": "/haptik-assignment/static/js/3.845bad76.chunk.js",
-    "static/js/3.845bad76.chunk.js.map": "/haptik-assignment/static/js/3.845bad76.chunk.js.map",
+    "main.css": "/static/css/main.bbc5f618.chunk.css",
+    "main.js": "/static/js/main.1d334f19.chunk.js",
+    "main.js.map": "/static/js/main.1d334f19.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8ccaff64.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8ccaff64.js.map",
+    "static/js/2.da329d06.chunk.js": "/static/js/2.da329d06.chunk.js",
+    "static/js/2.da329d06.chunk.js.map": "/static/js/2.da329d06.chunk.js.map",
+    "static/js/3.845bad76.chunk.js": "/static/js/3.845bad76.chunk.js",
+    "static/js/3.845bad76.chunk.js.map": "/static/js/3.845bad76.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.bbc5f618.chunk.css.map": "/haptik-assignment/static/css/main.bbc5f618.chunk.css.map",
-    "static/js/2.da329d06.chunk.js.LICENSE.txt": "/haptik-assignment/static/js/2.da329d06.chunk.js.LICENSE.txt"
+    "static/css/main.bbc5f618.chunk.css.map": "/static/css/main.bbc5f618.chunk.css.map",
+    "static/js/2.da329d06.chunk.js.LICENSE.txt": "/static/js/2.da329d06.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "/haptik-assignment/static/js/runtime-main.8ccaff64.js",
-    "/haptik-assignment/static/js/2.da329d06.chunk.js",
-    "/haptik-assignment/static/css/main.bbc5f618.chunk.css",
-    "/haptik-assignment/static/js/main.1d334f19.chunk.js"
+    "static/js/runtime-main.8ccaff64.js",
+    "static/js/2.da329d06.chunk.js",
+    "static/css/main.bbc5f618.chunk.css",
+    "static/js/main.1d334f19.chunk.js"
   ]
 }
