@@ -1,0 +1,32 @@
+.main-wrapper {
+  width: 50%;
+  margin: 10px auto;
+  border: 1px solid darkgray;
+  position: relative;
+}
+input:focus-visible {
+  outline: none;
+}
+.pop-up {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 4px 20px;
+  background: white;
+  width: 50%;
+  height: 100px;
+  box-shadow: 0px 0px 4px 2px #74777e;
+}
+.delete-btn {
+  padding: 8px 16px;
+  background: green;
+  color: white;
+  border: none;
+}
+.cancel-btn {
+  margin-left: 12px;
+  padding: 6px 12px;
+}
