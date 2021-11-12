@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./index.css";
+import PopUp from "../PopUp";
 
 const ListUI = ({
   list,
@@ -72,6 +73,7 @@ const List = () => {
   });
   const [favList, updateFavList] = useState([]);
   const [error, setError] = useState(false);
+  const [showPopUp, setShowPopUp] = useState({show:false, id:0});
   const [searchIcon, setSearchIcon] = useState(false);
   const [searchName, setSearchName] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
@@ -119,12 +121,10 @@ const List = () => {
     }
   };
   const onDeleteName = (event) => {
-    let r = window.confirm("Are you sure you want to delete a name?");
-    if (r == true) {
-      let test = [...list];
-      test.splice(event.target.id, 1);
-      updateList(test);
-    }
+    let test = [...list];
+    test.splice(event.target.id, 1);
+    updateList(test);
+    setShowPopUp(false);
   };
 
   const searchOpen = () => setSearchIcon(!searchIcon);
@@ -146,6 +146,17 @@ const List = () => {
     test.splice(event.target.id, 1);
     updateFavList(test);
   };
+
+  const showDeleteDialog = (event) => {
+    let test = {
+      ...showPopUp,
+      show: true,
+      id: event.target.id,
+    }
+    setShowPopUp(test);
+  }
+
+  const cancelDeleteDialog = () => setShowPopUp(false);
 
   const renderPageNumbers =
     pageNumbers.length > 1 &&
@@ -182,12 +193,19 @@ const List = () => {
       )}
       <ListUI
         list={lists}
-        onDeleteName={onDeleteName}
+        onDeleteName={showDeleteDialog}
         favouriteList={favouriteList}
         favList={favList}
         RemoveFromList={RemoveFromList}
       />
       {pageNumbers.length > 1 && <ul id="page-numbers">{renderPageNumbers}</ul>}
+      {showPopUp.show && (
+        <PopUp
+          onDeleteName={onDeleteName}
+          cancelDeleteDialog={cancelDeleteDialog}
+          id={showPopUp.id}
+        />
+      )}
     </>
   );
 };
